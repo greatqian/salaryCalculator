@@ -1,0 +1,97 @@
+
+body {
+	background: url(sky.jpg) no-repeat fixed;
+	background-size: cover;
+}
+.logo {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+.Input {
+    margin-bottom: 50px;
+}
+.container-box {
+	width: 500px;
+	/*height: 400px;*/
+	box-shadow: 1px 2px 10px #bbb;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -250px;
+	box-shadow: 2px;
+	padding: 20px 40px;
+	background: #fff;
+	border-radius: 3px;
+}
+.calculator-btn {
+	display: block;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    margin: 0 auto;
+    background: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    margin-bottom: 40px;
+}
+.ready {
+	cursor: pointer;
+    border: solid 1px #00B4E4;
+    color: #00B4E4;
+}
+.ready:hover {
+    background: #00B4E4;
+    color: white;
+}
+.salary-result {
+	padding: 30px 0;
+	font-size: 26px;
+	color: skyblue;
+	text-align: center;
+	border-top: 1px solid #bbb;
+}
+.chart-container {
+	padding-top: 10px;
+	width: 400px;
+	height: 280px;
+	margin: 30px auto;
+	border-top: 1px solid #bbb;
+}
+#loading {
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+	/*background: #eee;*/
+	text-align: center;
+	line-height: 100px;
+}
+.ball {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 0 15px;
+}
+.ball1 {
+	background: skyblue;
+	animation: bounce 1s 0s ease infinite alternate;
+}
+.ball2 {
+	background: lightgreen;
+	animation: bounce 1s 0.3s ease infinite alternate;
+}
+.ball3 {
+	background: pink;
+	animation: bounce 1s 0.6s ease infinite alternate;
+}
+
+@keyframes bounce {
+	100% {
+		transform: translateY(-30px);
+	}
+}

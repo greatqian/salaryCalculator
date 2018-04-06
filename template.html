@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>五险一金计算器</title>
+	<link rel="stylesheet" type="text/css" href="./main.css">
+	<link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/font-awesome.css">
+	<script src="./libs/jquery.min.js"></script>
+	<script src="./libs/highcharts.js"></script>
+	<script type="text/javascript" src="./main.js"></script>
+	<script type="text/javascript" src="./data.js"></script>
+	<!-- <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+
+	<div class="container-box">
+		<div class="logo">
+			五险一金计算器
+		</div>
+		<div class="form-group">
+			
+			<label for="city">选择地区:</label>
+	        <select class="form-control" id="city">
+		        
+	      	</select>
+		</div>
+		<div class="form-group">
+			<label for="Input">请输入税前工资</label>
+			<input id="salary" type="text" name="" class="form-control Input" />
+		</div>
+		<button class="calculator-btn" id="calculate">计算</button>
+
+		<div id="loading">
+			<div style="display: inline-block;">
+				<div class="ball ball1">
+					
+				</div>
+				<div class="ball ball2">
+					
+				</div>
+				<div class="ball ball3">
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="result-container" id="resultContainer">
+
+			<div class="salary-result">
+				税后工资：<span id="taxedSalary"></span>元
+			</div>
+
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>缴纳项目</th>
+						<th>个人缴纳</th>
+						<th>单位缴纳</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>养老保险</td>
+						<td id="yangLaoCount0"></td>
+						<td id="yangLaoCount1"></td>
+					</tr>
+					<tr>
+						<td>医疗保险</td>
+						<td id="yiLiaoCount0"></td>
+						<td id="yiLiaoCount1"></td>
+					</tr>
+					<tr>
+						<td>失业保险</td>
+						<td id="shiYeCount0"></td>
+						<td id="shiYeCount1"></td>
+					</tr>
+					<tr>
+						<td>工伤保险</td>
+						<td id="gongShangCount0"></td>
+						<td id="gongShangCount1"></td>
+					</tr>
+					<tr>
+						<td>生育保险</td>
+						<td id="shenYuCount0"></td>
+						<td id="shenYuCount1"></td>
+					</tr>
+					<tr>
+						<td>住房公积金</td>
+						<td id="jiJinCount0"></td>
+						<td id="jiJinCount1"></td>
+					</tr>
+					<tr>
+						<td>个人所得税</td>
+						<td id="personalTaxCount"></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>总计缴纳</td>
+						<td id="totalCount0"></td>
+						<td id="totalCount1"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div id="chart1" class="chart-container">
+				
+			</div>
+			<div id="chart2" class="chart-container">
+				
+			</div>
+			<div id="chart3" class="chart-container">
+				
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+</body>
+</html>
